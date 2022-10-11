@@ -1,0 +1,114 @@
+shubh@DESKTOP-QFKFBMM MINGW64 /f/Complete Web Development Bootcamp/Dance Website
+$ git config --global user.name "Shubham7488"
+
+shubh@DESKTOP-QFKFBMM MINGW64 /f/Complete Web Development Bootcamp/Dance Website
+$ git config --global user.email "shubhamshaw930@gmail.com"
+
+shubh@DESKTOP-QFKFBMM MINGW64 /f/Complete Web Development Bootcamp/Dance Website
+$ touch .gitignore
+// It is use to make empty file in the same path.This file is used to ignore or not want to add any big file if you want it.for this in it we just have to write like (file_name/)
+
+shubh@DESKTOP-QFKFBMM MINGW64 /f/Complete Web Development Bootcamp/Dance Website
+$ git init
+Initialized empty Git repository in F:/Complete Web Development Bootcamp/Dance Website/.git/
+// THis is use to make hidden folder.
+
+shubh@DESKTOP-QFKFBMM MINGW64 /f/Complete Web Development Bootcamp/Dance Website (master)
+$ git add .
+warning: in the working copy of 'package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
+
+shubh@DESKTOP-QFKFBMM MINGW64 /f/Complete Web Development Bootcamp/Dance Website (master)
+$ git commit -m "Initial commit"
+[master (root-commit) 163ecaf] Initial commit
+ 20 files changed, 2603 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 app.js
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 static/bg.avif
+ create mode 100644 static/img/1.png
+ create mode 100644 static/img/2.png
+ create mode 100644 static/img/3.png
+ create mode 100644 static/img/logo.png
+ create mode 100644 static/img/logo1.png
+ create mode 100644 static/img/logo2.png
+ create mode 100644 static/img/logo3.png
+ create mode 100644 static/img/logo4.png
+ create mode 100644 static/index.js
+ create mode 100644 static/style.css
+ create mode 100644 static/styleContact.css
+ create mode 100644 views/base.pug
+ create mode 100644 views/contact.pug
+ create mode 100644 views/home.pug
+ create mode 100644 views/index.pug
+
+shubh@DESKTOP-QFKFBMM MINGW64 /f/Complete Web Development Bootcamp/Dance Website (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+//After this go to gibhub of the project and select SSH and copy the right path then follow the following step
+
+shubh@DESKTOP-QFKFBMM MINGW64 /f/Complete Web Development Bootcamp/Dance Website (master)
+$ git remote add origin git@github.com:Shubham7488/Dance-Website.git
+
+shubh@DESKTOP-QFKFBMM MINGW64 /f/Complete Web Development Bootcamp/Dance Website (master)
+$ git push origin master
+The authenticity of host 'github.com (20.207.73.82)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+//After this again go to github.then in your account and select setting. then go SSH and GPG keys. Then New SSH Key. 
+Then give title and key section will be filled afterwards.Then follow the following steps.
+
+shubh@DESKTOP-QFKFBMM MINGW64 /f/Complete Web Development Bootcamp/Dance Website (master)
+$ ssh-keygen -t ed25519 -C "shubhamshaw930@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/shubh/.ssh/id_ed25519):                                    // (/c/Users/shubh/.ssh/id_ed25519.pub) copy this path and paste below
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/shubh/.ssh/id_ed25519
+Your public key has been saved in /c/Users/shubh/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:9oINCxBQLezVFpaS6G9fk1NmtWSHk+tp5oo8LCQDF+A shubhamshaw930@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|.+++ ooo     o   |
+| .+.*.+     B .  |
+| oEo +     + =   |
+|  +..     + o    |
+|   +. . S= . .   |
+|    =..*=.  =    |
+|   . =oooo.+     |
+|      o.oo  .    |
+|       .o...     |
++----[SHA256]-----+
+
+shubh@DESKTOP-QFKFBMM MINGW64 /f/Complete Web Development Bootcamp/Dance Website (master)
+$ cat /c/Users/shubh/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMav8QkqELOQFBPdfjIoyCXyyst7R251oQDlcdOxymGh shubhamshaw930@gmail.com
+//Copy the above line and paste in key section of github account.Then click on add SSH key.
+
+shubh@DESKTOP-QFKFBMM MINGW64 /f/Complete Web Development Bootcamp/Dance Website (master)
+$ git push origin master
+Enumerating objects: 25, done.
+Counting objects: 100% (25/25), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (23/23), done.
+Writing objects: 100% (25/25), 438.91 KiB | 1.13 MiB/s, done.
+Total 25 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To github.com:Shubham7488/Dance-Website.git
+ * [new branch]      master -> master
+
+
+
+
