@@ -1,0 +1,17 @@
+{
+  "name": "dev-dance-academy",
+  "version": "1.0.0",
+  "description": "This is a website of a propular dance academy",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dev Bhai",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.6.5",
+    "mongose": "^0.0.2-security",
+    "pug": "^3.0.2"
+  }
+}
